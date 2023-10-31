@@ -9,6 +9,7 @@ using WeekSevenAssignmentMoreDataBases.StuffForFiles;
 
 namespace WeekSevenAssignmentMoreDataBases.SQLConnection
 {
+    //Most of code learned and taken from Assignment 6
     internal class DataBaseConnect
     {
         private DataBaseConnect()

@@ -12,7 +12,7 @@ namespace WeekSevenAssignmentMoreDataBases.StuffForFiles
 {
     internal class FileParse
     {
-        //Most of the code is remebered from Assignment 4/5
+        //Most of the code is remebered from Assignment 4/5/6
 
         //List for the files to process
         List<IFile> ProcessingFiles { get; set; }

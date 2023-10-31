@@ -40,6 +40,7 @@ namespace WeekSevenAssignmentMoreDataBases.Engines
             }
             return ShowError;
         }
+        //Adds the data of the location of character as a string
         List<string> PutCharacterLocation(List<CharacterData> characterData)
         {
             List<string> locationData = new List<string>();
@@ -53,6 +54,7 @@ namespace WeekSevenAssignmentMoreDataBases.Engines
             }
             return locationData;
         }
+        //Adds the data of the type of character as a string
         List<string> PutTypeOnCharacter(List<CharacterData> characterData)
         {
             List<string> typeData = new List<string>();
@@ -80,6 +82,7 @@ namespace WeekSevenAssignmentMoreDataBases.Engines
 
                 while (line != null)
                 {
+                    //Spliting the data based off the 
                     var props = line.Split(',');
 
                     string name = props[0];
@@ -138,6 +141,7 @@ namespace WeekSevenAssignmentMoreDataBases.Engines
             }
         }
 
+        //Creates the about files and writes the data of the results after the parsing of the files
         public void CreateResultFiles()
         {
             if (Directory.Exists("./Results") == false)

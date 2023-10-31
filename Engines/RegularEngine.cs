@@ -108,14 +108,14 @@ namespace WeekSevenAssignmentMoreDataBases.Engines
                         isSword = Convert.ToBoolean(props[4]);
                     }
                     //Spits out the character data from the table
-                    CharacterData temp = new CharacterData();
-                    temp.Character = name.Trim();
-                    temp.Type = type.Trim().ToUpper();
-                    temp.Map_Location = location.Trim().ToUpper();
-                    temp.Original_character = isOriginal;
-                    temp.Sword_Fighter = isSword;
-                    temp.Magic_User = ismagic;
-                    characterData.Add(temp);
+                    CharacterData charData = new CharacterData();
+                    charData.Character = name.Trim();
+                    charData.Type = type.Trim().ToUpper();
+                    charData.Map_Location = location.Trim().ToUpper();
+                    charData.Original_character = isOriginal;
+                    charData.Sword_Fighter = isSword;
+                    charData.Magic_User = ismagic;
+                    characterData.Add(charData);
                     line = sourceRead.ReadLine();
                 }
             }
